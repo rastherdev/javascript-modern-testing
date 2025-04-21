@@ -15,7 +15,6 @@ const ppl2 = {...ppl};
 console.log(ppl);
 console.log("===========");
 console.log(ppl2);
-
-
-console.log(ppl.name);
+ppl2.name = "El cagon"
+console.log(ppl2.name);
 
