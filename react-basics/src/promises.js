@@ -31,16 +31,9 @@ const getHeroByIdAsync = (id) => {
                 reject('Error: Hero not found');
             }
         }, 2000);
-    });
+    }); 
 };
-
-getHeroByIdAsync(4).then((hero) => {
-    console.log('Hero found:', hero);
-}
-).catch((error) => {
-    console.error('Error:', error);
-}
-).finally(() => {
-    console.log('Async operation completed');
-}
-);
+getHeroByIdAsync(4)
+    .then(hero => console.log('Hero found:', hero))
+    .catch(error => console.error('Error:', error))
+    .finally(() => console.log('Async operation completed'));
